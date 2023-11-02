@@ -12,9 +12,7 @@ namespace Entity_Framework.Managers
        
         public BankManagerController(Interfaces.IBank iBank)
         {
-
             _IBank = iBank;
-
         }
         [Microsoft.AspNetCore.Mvc.Route("Test/[action]")]
         public void testmethod([FromServices] IBank bank)
